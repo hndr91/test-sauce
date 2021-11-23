@@ -1,0 +1,14 @@
+{
+  "name": "sauce",
+  "version": "0.0.1",
+  "description": "Just example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afif",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}
