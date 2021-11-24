@@ -50,7 +50,7 @@ describe('Login Page - Standard User Suite', () => {
         cy.contains('Products').should('be.visible')
     })
 
-    it.only('Contoh .then', () => {
+    it('Contoh .then', () => {
         cy.get('#user-name').then((uname)=>{
             uname.val('Coba aja')
             uname.val('')
