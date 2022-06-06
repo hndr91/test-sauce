@@ -5,5 +5,15 @@
         "**/2-advanced-examples/*"],
     "viewportHeight": 764,
     "viewportWidth": 1024,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "video": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "mochawesome-report/assets"
 }

@@ -4,11 +4,18 @@
   "description": "Just example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:test": "npx run cypress",
+    "cypress:merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "cypress:report": "npx marge mochawesome.json",
+    "cypress:prereport": "rm -rf cypress/results/; rm -rf mochawesome-report/; rm mochawesome.json",
+    "cypress:test-all": "npm run cypress:prereport; npm run cypress:test; npm run cypress:merge; npm run cypress:report"
   },
   "author": "Afif",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.6.0"
+    "cypress": "^8.6.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1"
   }
 }
