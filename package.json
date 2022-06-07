@@ -4,7 +4,7 @@
   "description": "Just example",
   "main": "index.js",
   "scripts": {
-    "cypress:test": "npx run cypress",
+    "cypress:test": "cypress run",
     "cypress:merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
     "cypress:report": "npx marge mochawesome.json",
     "cypress:prereport": "rm -rf cypress/results/; rm -rf mochawesome-report/; rm mochawesome.json",
