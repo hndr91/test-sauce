@@ -5,7 +5,7 @@ describe('Login Page - Standard User Suite', () => {
         cy.visit('/')
     })
 
-    it('Check for Standard User - Valid', () => {
+    it('Check for Standard Users - Valid', () => {
         // by ID
         cy.get('#user-name').type('standard_user')
         cy.get('#password').type('secret_sauce')
